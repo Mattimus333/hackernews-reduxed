@@ -17,12 +17,5 @@ describe('Button', () => {
 
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
-
-    component = renderer.create(
-      <Button>Yo</Button>
-    );
-    tree = component.toJSON();
-
-    expect(tree).toMatchSnapshot();
   });
 });

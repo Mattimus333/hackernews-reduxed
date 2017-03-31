@@ -6,12 +6,3 @@ exports[`Button snapshots 1`] = `
   More
 </button>
 `;
-
-exports[`Button snapshots 2`] = `
-<button
-  className={undefined}
-  onClick={undefined}
-  type="button">
-  Yo
-</button>
-`;

@@ -2,13 +2,12 @@ import React from 'react';
 
 import './Search.css';
 
-const Search = ({ value, onChange, onSubmit, children }) => {
+const Search = ({ value, children }) => {
   return (
-    <form onSubmit={onSubmit}>
+    <form>
       <input
         type="text"
         value={value}
-        onChange={onChange}
         className="Search-input"
       />
       <button
