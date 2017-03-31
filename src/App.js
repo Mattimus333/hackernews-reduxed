@@ -9,14 +9,11 @@ import './App.css';
 class App extends Component {
   ////////// Render
   render() {
-    const query = apiResults.query || 'react';
     const list = apiResults.hits || [];
     return (
       <div className="page">
         <div className="interactions">
-          <Search
-            value={query}
-          >
+          <Search>
             Search
           </Search>
         </div>

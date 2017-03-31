@@ -2,8 +2,7 @@ exports[`Search snapshots 1`] = `
 <form>
   <input
     className="Search-input"
-    type="text"
-    value={undefined} />
+    type="text" />
   <button
     className="Search-button"
     type="submit">
