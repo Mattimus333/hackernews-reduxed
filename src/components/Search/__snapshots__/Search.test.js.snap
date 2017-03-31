@@ -1,8 +1,11 @@
 exports[`Search snapshots 1`] = `
-<form>
+<form
+  onSubmit={undefined}>
   <input
     className="Search-input"
-    type="text" />
+    onChange={undefined}
+    type="text"
+    value={undefined} />
   <button
     className="Search-button"
     type="submit">
