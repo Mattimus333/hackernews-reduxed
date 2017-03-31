@@ -1,0 +1,57 @@
+exports[`Table snapshots 1`] = `
+<table
+  className="table">
+  <thead>
+    <tr>
+      <th>
+        Title
+      </th>
+      <th>
+        Author
+      </th>
+      <th>
+        Comments
+      </th>
+      <th>
+        Points
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <a
+          href={undefined}>
+          1
+        </a>
+      </td>
+      <td>
+        1
+      </td>
+      <td>
+        1
+      </td>
+      <td>
+        2
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href={undefined}>
+          2
+        </a>
+      </td>
+      <td>
+        2
+      </td>
+      <td>
+        1
+      </td>
+      <td>
+        2
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
