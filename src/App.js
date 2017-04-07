@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import * as CONST from './constants';
 
+
 import Search from './components/Search/Search.jsx';
 import Table from './components/Table/Table.jsx';
 import Button from './components/Button/Button.jsx';
@@ -30,26 +31,7 @@ class App extends Component {
     event.preventDefault();
   }
 
-  fetchSearchTopStories(query, page) {
-    const API_URL = [
-      `${CONST.PATH_BASE}`,
-      `${CONST.PATH_SEARCH}`,
-      '?',
-      `${CONST.PARAM_SEARCH}`,
-      `${query}`,
-      '&',
-      `${CONST.PARAM_PAGE}`,
-      `${page}`,
-      '&',
-      `${CONST.PARAM_HPP}`,
-      `${CONST.DEFAULT_HPP}`,
-    ].join('');
 
-    axios
-      .get(API_URL)
-      .then(response => response.data)
-      .then(result => this._setSearchTopStories(result));
-  }
 
   _setSearchTopStories(result) {
     const { hits } = result;
@@ -67,15 +49,14 @@ class App extends Component {
       <div className="page">
         <div className="interactions">
           <Search
-            value={query}
-            onChange={this.onSearchChange}
-            onSubmit={this.onSearchSubmit}
+            // value={query}
+            // onChange={this.onSearchChange}
+            // onSubmit={this.onSearchSubmit}
           >
             Search
           </Search>
         </div>
         <Table
-          list={list}
           sortKey={'NONE'}
         />
         <div className="interactions">
